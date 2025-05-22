@@ -73,16 +73,16 @@ const AdvancedChartVisual = () => {
     profit: 17
   }];
   return <div className="relative h-full w-full flex items-center justify-center" data-unique-id="1cca9d5f-719a-4254-b1d5-5780937ac7c2" data-file-name="components/FinancialCarousel.tsx">
-      <div className="absolute inset-0 bg-blue-50 rounded-lg" data-unique-id="ac14fea8-f06e-42b1-a6c2-3ab868a72997" data-file-name="components/FinancialCarousel.tsx"></div>
+      <div className="absolute inset-0 bg-[#0000]  bg-opacity-10 rounded-lg" data-unique-id="ac14fea8-f06e-42b1-a6c2-3ab868a72997" data-file-name="components/FinancialCarousel.tsx"></div>
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4" data-unique-id="7ade4999-78b4-44aa-99e3-e37d9b67302d" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
         <div className="w-full flex justify-between mb-6" data-unique-id="0a373cd4-d575-4585-8a9a-251350618d85" data-file-name="components/FinancialCarousel.tsx">
           <div data-unique-id="5205e23b-6f31-449c-b832-6172d98946cc" data-file-name="components/FinancialCarousel.tsx">
-            <h3 className="text-blue-800 text-lg font-medium" data-unique-id="151b1a4f-aaf4-4c65-9e47-f3fe299bd867" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e9a24144-9795-4df6-b0dd-187751ef4061" data-file-name="components/FinancialCarousel.tsx">Financial Performance</span></h3>
+            <h3 className="text-[#415d80] text-lg font-medium" data-unique-id="151b1a4f-aaf4-4c65-9e47-f3fe299bd867" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e9a24144-9795-4df6-b0dd-187751ef4061" data-file-name="components/FinancialCarousel.tsx">Financial Performance</span></h3>
             <p className="text-sm text-gray-500" data-unique-id="24b89764-d3b6-4a68-9497-31e1230021cf" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="21f37172-8930-4e5c-9256-0592b91e0f27" data-file-name="components/FinancialCarousel.tsx">YTD Overview (in millions)</span></p>
           </div>
           <div className="flex space-x-2" data-unique-id="0d6388c0-71f8-4346-86f2-86f40b046208" data-file-name="components/FinancialCarousel.tsx">
             <div className="flex items-center" data-unique-id="684708d1-56a1-49ba-ac12-3d3c18f9bb56" data-file-name="components/FinancialCarousel.tsx">
-              <div className="w-3 h-3 bg-blue-500 rounded-full mr-1" data-unique-id="4f92abf3-93cd-4502-aea0-feafc065546b" data-file-name="components/FinancialCarousel.tsx"></div>
+              <div className="w-3 h-3 bg-[#415d80] rounded-full mr-1" data-unique-id="4f92abf3-93cd-4502-aea0-feafc065546b" data-file-name="components/FinancialCarousel.tsx"></div>
               <span className="text-xs text-gray-600" data-unique-id="f4b6f5b7-915a-4b78-9fd9-f2af756d7dd8" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="89186597-6c49-499b-9230-b5a258d92b37" data-file-name="components/FinancialCarousel.tsx">Revenue</span></span>
             </div>
             <div className="flex items-center" data-unique-id="49563fdc-0099-4392-9619-6d30fd82aa08" data-file-name="components/FinancialCarousel.tsx">
@@ -108,7 +108,7 @@ const AdvancedChartVisual = () => {
             {/* Data lines */}
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 700 400" preserveAspectRatio="none" data-unique-id="4c9ee0a4-0842-407b-bf73-c90ef696580d" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
               {/* Revenue line */}
-              <motion.path d="M 50,135 150,159 250,80 350,76 450,176 550,180 650,112" fill="none" stroke="#3b82f6" strokeWidth="3" initial={{
+              <motion.path d="M 50,135 150,159 250,80 350,76 450,176 550,180 650,112" fill="none" stroke="#415d80" strokeWidth="3" initial={{
               pathLength: 0
             }} animate={{
               pathLength: 1
@@ -140,7 +140,7 @@ const AdvancedChartVisual = () => {
             }} />
               
               {/* Data points for revenue */}
-              {data.map((point, index) => <motion.circle key={`revenue-${index}`} cx={50 + index * 100} cy={400 - point.revenue * 4} r="6" fill="#3b82f6" initial={{
+              {data.map((point, index) => <motion.circle key={`revenue-${index}`} cx={50 + index * 100} cy={400 - point.revenue * 4} r="6" fill="#415d80" initial={{
               scale: 0
             }} animate={{
               scale: 1
@@ -170,7 +170,7 @@ const AdvancedChartVisual = () => {
             }} data-unique-id="0396e115-757a-4d0a-9f48-70741c6b33da" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true" />)}
               
               {/* Data values */}
-              {data.map((point, index) => <motion.text key={`value-${index}`} x={50 + index * 100} y={400 - point.revenue * 4 - 15} textAnchor="middle" fill="#3b82f6" fontSize="12" fontWeight="bold" initial={{
+              {data.map((point, index) => <motion.text key={`value-${index}`} x={50 + index * 100} y={400 - point.revenue * 4 - 15} textAnchor="middle" fill="#415d80" fontSize="12" fontWeight="bold" initial={{
               opacity: 0
             }} animate={{
               opacity: 1
@@ -185,7 +185,7 @@ const AdvancedChartVisual = () => {
         
         {/* Key metrics */}
         <div className="flex justify-between w-full mt-4" data-unique-id="616d35fc-9c70-4b1f-aa0e-180b8ab6ea16" data-file-name="components/FinancialCarousel.tsx">
-          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-blue-100 w-1/3 mx-1" initial={{
+          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-[#415d80] border-opacity-20 w-1/3 mx-1" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -195,11 +195,11 @@ const AdvancedChartVisual = () => {
           delay: 0.2
         }} data-unique-id="7e71d22f-aba2-45dd-972c-e20c4c8e8b0b" data-file-name="components/FinancialCarousel.tsx">
             <div className="text-xs text-gray-500" data-unique-id="7b7da2c7-ae68-4a6c-b4a9-fac1b8866221" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="f3324d70-98f6-404a-ac97-e85ec05922da" data-file-name="components/FinancialCarousel.tsx">Total Revenue</span></div>
-            <div className="text-lg font-bold text-blue-800" data-unique-id="36cb0447-d063-40be-bf5e-1388f2cf9873" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="ceaeafd2-0e44-4f5a-9470-d9c7727147dd" data-file-name="components/FinancialCarousel.tsx">$468M</span></div>
+            <div className="text-lg font-bold text-[#415d80]" data-unique-id="36cb0447-d063-40be-bf5e-1388f2cf9873" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="ceaeafd2-0e44-4f5a-9470-d9c7727147dd" data-file-name="components/FinancialCarousel.tsx">$468M</span></div>
             <div className="text-xs text-green-600" data-unique-id="2940158f-30b5-432e-bb51-f17fb019c880" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="38565efd-33af-4e56-b287-6e30ef69455d" data-file-name="components/FinancialCarousel.tsx">+12.5% YoY</span></div>
           </motion.div>
           
-          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-blue-100 w-1/3 mx-1" initial={{
+          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-[#415d80] border-opacity-20 w-1/3 mx-1" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -209,11 +209,11 @@ const AdvancedChartVisual = () => {
           delay: 0.4
         }} data-unique-id="89ce9906-57b6-46b3-8a55-317db130b6f9" data-file-name="components/FinancialCarousel.tsx">
             <div className="text-xs text-gray-500" data-unique-id="cbb41a94-c58f-4be6-aaa4-b8d294643b78" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="9234f561-addc-4069-9310-309c954a1cea" data-file-name="components/FinancialCarousel.tsx">Total Expenses</span></div>
-            <div className="text-lg font-bold text-blue-800" data-unique-id="2edf4c18-4fdb-45a5-818a-e0eb53f02526" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e5730811-8b60-4326-8477-910f4e3b7bf1" data-file-name="components/FinancialCarousel.tsx">$355M</span></div>
+            <div className="text-lg font-bold text-[#415d80]" data-unique-id="2edf4c18-4fdb-45a5-818a-e0eb53f02526" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e5730811-8b60-4326-8477-910f4e3b7bf1" data-file-name="components/FinancialCarousel.tsx">$355M</span></div>
             <div className="text-xs text-red-400" data-unique-id="64d1b8d4-1eae-4997-a68f-ef7ea55245c2" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="9989453f-63aa-4207-9a69-df12939ffc91" data-file-name="components/FinancialCarousel.tsx">+8.2% YoY</span></div>
           </motion.div>
           
-          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-blue-100 w-1/3 mx-1" initial={{
+          <motion.div className="bg-white p-3 rounded-lg shadow-sm border border-[#415d80] border-opacity-20 w-1/3 mx-1" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -223,7 +223,7 @@ const AdvancedChartVisual = () => {
           delay: 0.6
         }} data-unique-id="7b336737-5649-4372-ac1b-0211f3b325ba" data-file-name="components/FinancialCarousel.tsx">
             <div className="text-xs text-gray-500" data-unique-id="fe6fe2c4-488a-4d08-ad93-e53f2c14e702" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="0ce672ba-0762-44a6-b089-65ab1c88b9b7" data-file-name="components/FinancialCarousel.tsx">Net Profit</span></div>
-            <div className="text-lg font-bold text-blue-800" data-unique-id="b80f7c9a-accc-4aa6-89c2-e85d2b50ce23" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="c14c018c-0dff-41a7-a0c7-e9b5296ad876" data-file-name="components/FinancialCarousel.tsx">$113M</span></div>
+            <div className="text-lg font-bold text-[#415d80]" data-unique-id="b80f7c9a-accc-4aa6-89c2-e85d2b50ce23" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="c14c018c-0dff-41a7-a0c7-e9b5296ad876" data-file-name="components/FinancialCarousel.tsx">$113M</span></div>
             <div className="text-xs text-green-600" data-unique-id="475be9aa-a6d7-4e8b-abb0-db7a4e05f764" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="9cf7168a-cd83-4adc-be0c-3698a0eb808a" data-file-name="components/FinancialCarousel.tsx">+25.6% YoY</span></div>
           </motion.div>
         </div>
@@ -253,7 +253,7 @@ const DocumentVisual = () => {
               <div className="text-sm text-gray-500" data-unique-id="76cd7482-57f6-474d-af15-8a88ce05cb34" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="5bf87543-6604-44ba-af33-4daa2ae1fc9a" data-file-name="components/FinancialCarousel.tsx">Q3 2024 • Confidential</span></div>
             </div>
             <div className="flex items-center" data-unique-id="1d029ff7-3d56-419c-a3e0-a8d4aa8740a6" data-file-name="components/FinancialCarousel.tsx">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold" data-unique-id="21f68f66-bd77-4a32-b437-7441ecf43e53" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="8bae0419-42f1-4aa5-b3ad-005966f0bb32" data-file-name="components/FinancialCarousel.tsx">
+              <div className="w-8 h-8 bg-[#415d80] rounded-full flex items-center justify-center text-white font-bold" data-unique-id="21f68f66-bd77-4a32-b437-7441ecf43e53" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="8bae0419-42f1-4aa5-b3ad-005966f0bb32" data-file-name="components/FinancialCarousel.tsx">
                 Q3
               </span></div>
             </div>
@@ -573,10 +573,10 @@ const InvestmentVisual = () => <div className="relative h-full w-full flex items
               <span className="text-sm text-gray-600" data-unique-id="67a0c982-bbd3-4ab1-b300-a7b12f21d2fc" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="8dc2cb75-6c2d-49b7-9b15-a7b27dd98a76" data-file-name="components/FinancialCarousel.tsx">Technology</span></span>
               <span className="text-sm font-medium text-gray-700" data-unique-id="abf4726c-24d4-4a9e-b292-96ddb3f479b1" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="5774c565-0c4f-4447-a7f3-acf59635c706" data-file-name="components/FinancialCarousel.tsx">43%</span></span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2" data-unique-id="6f8f739c-bb98-41ea-a1e7-1196d4d3f9fb" data-file-name="components/FinancialCarousel.tsx">
-              <div className="bg-blue-600 h-2 rounded-full" style={{
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="bg-[#415d80] h-2 rounded-full" style={{
               width: '43%'
-            }} data-unique-id="32fde2ea-2c12-4395-a157-def6e21e0412" data-file-name="components/FinancialCarousel.tsx"></div>
+              }}></div>
             </div>
           </div>
           
@@ -585,10 +585,10 @@ const InvestmentVisual = () => <div className="relative h-full w-full flex items
               <span className="text-sm text-gray-600" data-unique-id="bb903557-3b82-42df-9b5a-1b936a62c9f4" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="58e0d455-de79-498e-a034-60031ed7d8db" data-file-name="components/FinancialCarousel.tsx">Financial Services</span></span>
               <span className="text-sm font-medium text-gray-700" data-unique-id="ceb3de6c-8f49-450f-9417-d676a4eb01ab" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="0c72d370-52b3-41a1-b0b0-47c646dd8a31" data-file-name="components/FinancialCarousel.tsx">28%</span></span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2" data-unique-id="1e69c3f4-4e7e-4ed1-8a60-39b0f05f6407" data-file-name="components/FinancialCarousel.tsx">
-              <div className="bg-blue-500 h-2 rounded-full" style={{
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="bg-[#415d80] h-2 rounded-full" style={{
               width: '28%'
-            }} data-unique-id="439feea2-43bc-4be9-b4a6-026c75147810" data-file-name="components/FinancialCarousel.tsx"></div>
+              }}></div>
             </div>
           </div>
           
@@ -597,10 +597,10 @@ const InvestmentVisual = () => <div className="relative h-full w-full flex items
               <span className="text-sm text-gray-600" data-unique-id="d8ff2fa9-17df-4c5f-8842-87e8b393d18d" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="dcfb521a-bedc-45f9-81ff-9f5de7a88448" data-file-name="components/FinancialCarousel.tsx">Healthcare</span></span>
               <span className="text-sm font-medium text-gray-700" data-unique-id="79b75a38-7f3c-42fe-a453-2b1551d6962c" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="7949d3d9-52ba-4788-a1e0-b979368970a1" data-file-name="components/FinancialCarousel.tsx">15%</span></span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2" data-unique-id="349ee194-8556-47a0-a59f-5758a6daa205" data-file-name="components/FinancialCarousel.tsx">
-              <div className="bg-blue-400 h-2 rounded-full" style={{
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="bg-[#415d80] h-2 rounded-full" style={{
               width: '15%'
-            }} data-unique-id="191c6982-ee63-4746-a6c7-c39db6a56690" data-file-name="components/FinancialCarousel.tsx"></div>
+              }}></div>
             </div>
           </div>
           
@@ -609,10 +609,10 @@ const InvestmentVisual = () => <div className="relative h-full w-full flex items
               <span className="text-sm text-gray-600" data-unique-id="ee7419dc-085e-4f10-ad1a-8a52badbebde" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="87579a31-da5c-4ed7-837a-11b5dbb7d9dc" data-file-name="components/FinancialCarousel.tsx">Consumer Goods</span></span>
               <span className="text-sm font-medium text-gray-700" data-unique-id="6fdc321a-454f-4975-973f-4fcff6e1fb24" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="7c69d25a-5d2c-42f7-a124-4fdc526457bd" data-file-name="components/FinancialCarousel.tsx">14%</span></span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2" data-unique-id="1b2cd9c9-0974-4091-a400-d92fe8a687a8" data-file-name="components/FinancialCarousel.tsx">
-              <div className="bg-blue-300 h-2 rounded-full" style={{
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="bg-[#415d80] h-2 rounded-full" style={{
               width: '14%'
-            }} data-unique-id="b144d7a0-8699-482e-bcb8-5569bac1ecc7" data-file-name="components/FinancialCarousel.tsx"></div>
+              }}></div>
             </div>
           </div>
         </div>
@@ -842,10 +842,10 @@ const FinancialCarousel: React.FC = () => {
   return <div className="w-full h-screen bg-gray-50 flex flex-col items-center justify-center overflow-hidden" data-unique-id="e5ac3d63-d769-41eb-b297-a975e0a4c980" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
       {/* Header */}
       <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
-        <h1 className="text-4xl font-bold text-blue-800 tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
+        <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
           LLM-Powered Financial Intelligence
         </span></h1>
-        <p className="text-blue-600 mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx">Advanced analytics and AI-driven insights for strategic decision making</span></p>
+        <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx">Advanced analytics and AI-driven insights for strategic decision making</span></p>
       </div>
       
       {/* Carousel */}
@@ -866,7 +866,7 @@ const FinancialCarousel: React.FC = () => {
               <div className="h-full flex flex-col" data-unique-id="1101ac9d-2189-4760-8e49-45b33b2b78cd" data-file-name="components/FinancialCarousel.tsx">
                 <div className="flex items-center mb-4" data-unique-id="5ccb257e-6d5f-4642-aba2-fb8a90990af2" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                   {renderIcon(financialData[currentSlide].chartType)}
-                  <h2 className="text-xl font-semibold text-blue-800 ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">{currentData[currentSlide].title}</h2>
+                  <h2 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">{currentData[currentSlide].title}</h2>
                 </div>
                 <div className="flex-grow relative" data-unique-id="828d0a81-119a-4582-841a-1fc9b142ab53" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                   {renderChart(currentData[currentSlide].chartType)}
@@ -1078,8 +1078,8 @@ const FinancialCarousel: React.FC = () => {
                 </div>
                 
                 <div className="mt-6 flex items-center" data-unique-id="72ec9c7d-5c0a-4732-b722-a5567b1ca0c7" data-file-name="components/FinancialCarousel.tsx">
-                  <div className="flex-grow h-[1px] bg-blue-200" data-unique-id="25f6c97c-f396-4320-b1f5-1ef156c03b2c" data-file-name="components/FinancialCarousel.tsx"></div>
-                  <div className="mx-4 text-blue-600 text-sm flex items-center" data-unique-id="268f5d1a-dcab-432d-9473-93ede1c9289a" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+                  <div className="flex-grow h-[1px] bg-[#415d80] bg-opacity-20" data-unique-id="25f6c97c-f396-4320-b1f5-1ef156c03b2c" data-file-name="components/FinancialCarousel.tsx"></div>
+                  <div className="mx-4 text-[#415d80] text-sm flex items-center" data-unique-id="268f5d1a-dcab-432d-9473-93ede1c9289a" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                     {currentData[currentSlide].insightGenerated ? <motion.div initial={{
                     opacity: 0
                   }} animate={{
@@ -1105,7 +1105,7 @@ const FinancialCarousel: React.FC = () => {
                         <span className="editable-text" data-unique-id="21796b2c-e42b-4161-b2fa-9a9f771cfb41" data-file-name="components/FinancialCarousel.tsx">Scanning...</span>
                       </motion.div>}
                   </div>
-                  <div className="flex-grow h-[1px] bg-blue-200" data-unique-id="b0086d3b-99db-4444-841f-9ad7230b08bb" data-file-name="components/FinancialCarousel.tsx"></div>
+                  <div className="flex-grow h-[1px] bg-[#415d80] bg-opacity-20" data-unique-id="b0086d3b-99db-4444-841f-9ad7230b08bb" data-file-name="components/FinancialCarousel.tsx"></div>
                 </div>
                 
                 <div className="mt-6" data-unique-id="bee55972-030e-423c-bb78-7d6fc052ff7b" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
@@ -1137,11 +1137,11 @@ const FinancialCarousel: React.FC = () => {
         </AnimatePresence>
         
         {/* Navigation controls */}
-        <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 hover:bg-opacity-90 text-white p-2 rounded-full z-10 transition-colors" aria-label="Previous slide" data-unique-id="7fc3f8ee-4f01-4c8f-b23f-05f952e570d9" data-file-name="components/FinancialCarousel.tsx">
+        <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white p-2 rounded-full z-10 transition-colors" aria-label="Previous slide" data-unique-id="7fc3f8ee-4f01-4c8f-b23f-05f952e570d9" data-file-name="components/FinancialCarousel.tsx">
           <ChevronLeft className="w-6 h-6" />
         </button>
         
-        <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 hover:bg-opacity-90 text-white p-2 rounded-full z-10 transition-colors" aria-label="Next slide" data-unique-id="fc447118-cee1-4366-811d-35d898130779" data-file-name="components/FinancialCarousel.tsx">
+        <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white p-2 rounded-full z-10 transition-colors" aria-label="Next slide" data-unique-id="fc447118-cee1-4366-811d-35d898130779" data-file-name="components/FinancialCarousel.tsx">
           <ChevronRight className="w-6 h-6" />
         </button>
         
@@ -1150,7 +1150,7 @@ const FinancialCarousel: React.FC = () => {
           {currentData.map((_, index) => <button key={index} onClick={() => {
           setDirection(index > currentSlide ? 1 : -1);
           setCurrentSlide(index);
-        }} className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-blue-500' : 'bg-gray-500'}`} aria-label={`Go to slide ${index + 1}`} data-is-mapped="true" data-unique-id="92f9b378-3d59-43ea-9578-915ace2d8c55" data-file-name="components/FinancialCarousel.tsx" />)}
+        }} className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-[#415d80]' : 'bg-gray-500'}`} aria-label={`Go to slide ${index + 1}`} data-is-mapped="true" data-unique-id="92f9b378-3d59-43ea-9578-915ace2d8c55" data-file-name="components/FinancialCarousel.tsx" />)}
         </div>
       </div>
       
@@ -1164,7 +1164,7 @@ const FinancialCarousel: React.FC = () => {
           repeat: Infinity,
           ease: "linear"
         }} data-unique-id="a6ec88bf-6fdc-443f-887b-51244eedc6c6" data-file-name="components/FinancialCarousel.tsx">
-            <DollarSign className="w-6 h-6 text-blue-500" />
+            <DollarSign className="w-6 h-6 text-[#415d80]" />
           </motion.div>
           
           <motion.div animate={{
@@ -1174,7 +1174,7 @@ const FinancialCarousel: React.FC = () => {
           repeat: Infinity,
           ease: "linear"
         }} data-unique-id="5132de87-99fa-457f-bea1-81691946e5c3" data-file-name="components/FinancialCarousel.tsx">
-            <BarChart3 className="w-6 h-6 text-blue-500" />
+            <BarChart3 className="w-6 h-6 text-[#415d80]" />
           </motion.div>
           
           <motion.div animate={{
@@ -1184,7 +1184,7 @@ const FinancialCarousel: React.FC = () => {
           repeat: Infinity,
           ease: "linear"
         }} data-unique-id="b3600ebd-a44f-4818-a8fa-f66ad319b3eb" data-file-name="components/FinancialCarousel.tsx">
-            <Scan className="w-6 h-6 text-blue-500" />
+            <Scan className="w-6 h-6 text-[#415d80]" />
           </motion.div>
         </div>
       </div>

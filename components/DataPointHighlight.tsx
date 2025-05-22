@@ -41,7 +41,7 @@ const DataPointHighlight: React.FC<DataPointHighlightProps> = ({
       left: `${point.x}%`,
       top: `${point.y}%`
     }} data-is-mapped="true" data-unique-id="0c5a0f5a-1cb9-4be7-9ef9-14fd87f97b94" data-file-name="components/DataPointHighlight.tsx">
-          <motion.div className="absolute inset-0 rounded-full border-2 border-blue-500" initial={{
+          <motion.div className="absolute inset-0 rounded-full border-2 border-[#415d80]" initial={{
         scale: 0,
         opacity: 0
       }} animate={activePointIndex === index ? {

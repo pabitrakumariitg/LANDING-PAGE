@@ -114,7 +114,7 @@ const FinancialInsightsCard = () => {
       case 'warning':
         return <AlertCircle className="w-5 h-5 text-amber-500" />;
       default:
-        return <Lightbulb className="w-5 h-5 text-blue-500" />;
+        return <Lightbulb className="w-5 h-5 text-[#415d80]" />;
     }
   };
   const getInsightColor = (type: string) => {
@@ -126,7 +126,7 @@ const FinancialInsightsCard = () => {
       case 'warning':
         return 'border-amber-200 bg-amber-50';
       default:
-        return 'border-blue-200 bg-blue-50';
+        return 'border-[#415d80] border-opacity-20 bg-[#415d80] bg-opacity-5';
     }
   };
   return <div className="w-full max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden" data-unique-id="0ab521d5-8412-48d9-b641-352c83a557a0" data-file-name="components/FinancialInsightsCard.tsx">
@@ -136,7 +136,7 @@ const FinancialInsightsCard = () => {
           
           <div className="flex items-center gap-3" data-unique-id="fa1bc192-07b9-4a18-88bb-96dbdc12287e" data-file-name="components/FinancialInsightsCard.tsx">
             <div className="relative" data-unique-id="f6f286b9-f0ca-4358-b115-ca80b81965f6" data-file-name="components/FinancialInsightsCard.tsx">
-              <select value={selectedModel} onChange={e => setSelectedModel(e.target.value)} className="appearance-none bg-white border border-gray-200 rounded-md py-1 px-3 pr-8 text-sm text-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" data-unique-id="db3aba39-5ddb-45d7-a928-51d214fbed00" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
+              <select value={selectedModel} onChange={e => setSelectedModel(e.target.value)} className="appearance-none bg-white border border-gray-200 rounded-md py-1 px-3 pr-8 text-sm text-gray-700 focus:outline-none focus:border-[#415d80] focus:ring-1 focus:ring-[#415d80]" data-unique-id="db3aba39-5ddb-45d7-a928-51d214fbed00" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
                 {getTextProviders().map(provider => <option key={provider} value={provider} data-is-mapped="true" data-unique-id="51a38ced-4b21-431b-bb75-8755f12c8ee4" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
                     {provider === 'azure-gpt-4o' ? 'GPT-4o' : provider}
                   </option>)}
@@ -148,7 +148,7 @@ const FinancialInsightsCard = () => {
               </div>
             </div>
             
-            <button onClick={generateInsights} disabled={isLoading} className={`px-3 py-1 rounded-md text-sm bg-blue-500 hover:bg-blue-600 hover:bg-opacity-90 text-white flex items-center gap-1 transition-colors ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`} data-unique-id="d7673bb8-67f1-4c1e-95d6-3a60da21e2ea" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
+            <button onClick={generateInsights} disabled={isLoading} className={`px-3 py-1 rounded-md text-sm bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white flex items-center gap-1 transition-colors ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`} data-unique-id="d7673bb8-67f1-4c1e-95d6-3a60da21e2ea" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
               {isLoading ? 'Generating...' : 'Refresh'}
             </button>
           </div>
@@ -176,7 +176,7 @@ const FinancialInsightsCard = () => {
                 duration: 2,
                 repeat: Infinity,
                 ease: "linear"
-              }} className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full" data-is-mapped="true" data-unique-id="15239a30-cccd-412e-868f-2c75419c4804" data-file-name="components/FinancialInsightsCard.tsx" /> : getInsightIcon(insight.type)}
+              }} className="w-5 h-5 border-2 border-[#415d80] border-t-transparent rounded-full" data-is-mapped="true" data-unique-id="15239a30-cccd-412e-868f-2c75419c4804" data-file-name="components/FinancialInsightsCard.tsx" /> : getInsightIcon(insight.type)}
                 </div>
                 <div className="flex-1" data-is-mapped="true" data-unique-id="5d0cb667-43fb-4dee-a55a-6eafc0e7d6fe" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
                   <h3 className="font-medium text-gray-800 mb-1" data-is-mapped="true" data-unique-id="03fbde82-03a5-4cef-901e-35131fc3ba3d" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">{insight.title}</h3>
@@ -202,7 +202,7 @@ const FinancialInsightsCard = () => {
             </motion.div>)}
         </div>
         
-        {!isLoading && insights.some(i => i.type === 'positive') && <motion.div className="mt-4 text-sm text-right text-blue-600 flex items-center justify-end cursor-pointer group" initial={{
+        {!isLoading && insights.some(i => i.type === 'positive') && <motion.div className="mt-4 text-sm text-right text-[#415d80] flex items-center justify-end cursor-pointer group" initial={{
         opacity: 0
       }} animate={{
         opacity: 1

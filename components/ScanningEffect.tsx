@@ -10,7 +10,7 @@ interface ScanningEffectProps {
 }
 const ScanningEffect: React.FC<ScanningEffectProps> = ({
   isActive,
-  color = 'rgba(59, 130, 246, 0.7)',
+  color = 'rgba(65, 93, 128, 0.7)',
   duration = 2,
   onScanComplete
 }) => {
@@ -28,7 +28,7 @@ const ScanningEffect: React.FC<ScanningEffectProps> = ({
   }, [isActive, duration, onScanComplete]);
   if (!isActive && !scanComplete) return null;
   if (scanComplete) {
-    return <motion.div className="absolute inset-0 bg-blue-500 bg-opacity-5 z-20" initial={{
+    return <motion.div className="absolute inset-0 bg-[#415d80] bg-opacity-5 z-20" initial={{
       opacity: 0
     }} animate={{
       opacity: [0, 0.3, 0],
