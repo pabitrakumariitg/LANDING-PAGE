@@ -843,7 +843,7 @@ const FinancialCarousel: React.FC = () => {
     {/* Header */}
     <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
       <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
-      Complex Financial Documents, Decoded by Firmi
+        Complex Financial Documents, Decoded by Firmi
       </span></h1>
       <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx"> Firmi's models parses research reports with complex tables and charts to structured, semantic outputs accurately at scale</span></p>
     </div>
@@ -866,10 +866,23 @@ const FinancialCarousel: React.FC = () => {
             <div className="h-full flex flex-col" data-unique-id="1101ac9d-2189-4760-8e49-45b33b2b78cd" data-file-name="components/FinancialCarousel.tsx">
               <div className="flex items-center mb-4" data-unique-id="5ccb257e-6d5f-4642-aba2-fb8a90990af2" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {renderIcon(financialData[currentSlide].chartType)}
-                <h2 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">{currentData[currentSlide].title}</h2>
+                <h4 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+                  {currentSlide === 0 ? "Daily crude production volumes from ONGC's fields, April 2009 onward (ktoe/d or kb/d)" : currentData[currentSlide].title}
+                </h4>
               </div>
               <div className="flex-grow relative" data-unique-id="828d0a81-119a-4582-841a-1fc9b142ab53" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
-                {renderChart(currentData[currentSlide].chartType)}
+                {currentSlide === 0 ? (
+                  <div className="flex flex-col items-center justify-center w-full h-full">
+                    <img
+                      src="/images/daily-crude.png"
+                      alt="Daily crude production volumes from ONGC's fields, April 2009 onward (ktoe/d or kb/d)"
+                      className="w-full max-h-72 object-contain rounded border shadow"
+                    />
+
+                  </div>
+                ) : (
+                  renderChart(currentData[currentSlide].chartType)
+                )}
 
                 {/* Advanced scanner effect */}
                 <ScanningEffect isActive={isScanning} />
@@ -986,6 +999,14 @@ const FinancialCarousel: React.FC = () => {
           {/* Right section - AI Insights */}
           <div className="w-1/2 bg-white p-6 rounded-r-xl shadow-md" data-unique-id="47d66e79-6a21-4e66-a4dc-d3a964bd63e9" data-file-name="components/FinancialCarousel.tsx">
             <div className="h-full flex flex-col justify-center p-6 rounded-lg border border-[#e6f0f9]" style={holographicEffect} data-unique-id="0a2873cd-ab19-4040-bfc6-1808b49daa8d" data-file-name="components/FinancialCarousel.tsx">
+              {currentSlide === 0 && (
+                <div className="mb-6">
+                  {/* <h3 className="text-lg font-bold text-[#415d80] mb-2">Firmi's Insights</h3>
+                  <p className="text-gray-700 text-sm">
+                    ONGC's crude oil production has exhibited a structural decline over the past 15 years, with output falling from ~66-68 ktoe/d (~495–510 kb/d) in FY10 to ~51 ktoe/d (~375 kb/d) in FY24. This represents a ~23% drop in average daily production, highlighting systemic challenges in reserve replacement, field productivity, and possibly capital allocation. </p>
+                 */}
+                </div>
+              )}
               <div className="mb-4 flex items-center" data-unique-id="bf4d5ad0-8388-45aa-9aab-2c72303c9209" data-file-name="components/FinancialCarousel.tsx">
                 <motion.div animate={{
                   rotate: isScanning || currentData[currentSlide].insightGenerating ? [0, 360] : 0,
@@ -1014,7 +1035,7 @@ const FinancialCarousel: React.FC = () => {
                 </motion.div>
                 <h3 className="text-lg font-medium text-[#415d80]" data-unique-id="11306408-f1de-476a-8d7c-666c628f97cf" data-file-name="components/FinancialCarousel.tsx">
                   <span className="editable-text" data-unique-id="dc667316-da43-44ea-bd34-b59ba273b8f6" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
-                    {currentData[currentSlide].insightGenerated ? "AI-Generated Insights" : currentData[currentSlide].scanComplete ? "Generating Insights..." : "Scanning Data..."}
+                    {currentData[currentSlide].insightGenerated ? "Firmi Insights" : currentData[currentSlide].scanComplete ? "Generating Insights..." : "Scanning Data..."}
                   </span>
                 </h3>
               </div>

@@ -112,9 +112,7 @@ const DelegateSection = () => {
               Reason over All of Your Data
             </h2>
             <p className="text-lg text-tertiary mb-8">
-              Firmi unifies your internal files, external data, and trusted
-              sources into a single searchable plane, enabling every analysis
-              to be as comprehensive as possible.
+            ONGC's crude oil production has exhibited a structural decline over the past 15 years, with output falling from ~66-68 ktoe/d (~495–510 kb/d) in FY10 to ~51 ktoe/d (~375 kb/d) in FY24. This represents a ~23% drop in average daily production, highlighting systemic challenges in reserve replacement, field productivity, and possibly capital allocation.
             </p>
 
             <div className="bg-blue-50 rounded-xl p-6 relative overflow-hidden">
