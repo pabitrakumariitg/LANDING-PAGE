@@ -867,7 +867,7 @@ const FinancialCarousel: React.FC = () => {
               <div className="flex items-center mb-4" data-unique-id="5ccb257e-6d5f-4642-aba2-fb8a90990af2" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {renderIcon(financialData[currentSlide].chartType)}
                 <h4 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
-                  {currentSlide === 0 ? "Daily crude production volumes from ONGC's fields, April 2009 onward (ktoe/d or kb/d)" : currentData[currentSlide].title}
+                  {currentSlide === 0 ? "Daily crude production volumes from ONGC's fields" : currentData[currentSlide].title}
                 </h4>
               </div>
               <div className="flex-grow relative" data-unique-id="828d0a81-119a-4582-841a-1fc9b142ab53" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
@@ -875,7 +875,7 @@ const FinancialCarousel: React.FC = () => {
                   <div className="flex flex-col items-center justify-center w-full h-full">
                     <img
                       src="/images/daily-crude.png"
-                      alt="Daily crude production volumes from ONGC's fields, April 2009 onward (ktoe/d or kb/d)"
+                      alt="Daily crude production volumes from ONGC's fields"
                       className="w-full max-h-72 object-contain rounded border shadow"
                     />
 
