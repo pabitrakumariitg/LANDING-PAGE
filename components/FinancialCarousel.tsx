@@ -771,7 +771,7 @@ const FinancialCarousel: React.FC = () => {
   // Function to generate insight for current slide
   const generateInsightForCurrentSlide = async () => {
     // Add a slight delay for visual effect
-    await new Promise(resolve => setTimeout(resolve, 800));
+    await new Promise(resolve => setTimeout(resolve, 100));
     try {
       const topic = currentData[currentSlide].title;
       const prompt = `You are a financial analyst AI assistant. Provide a concise, professional insight about ${topic}. 
