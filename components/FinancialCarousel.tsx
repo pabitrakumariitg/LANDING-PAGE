@@ -843,9 +843,9 @@ const FinancialCarousel: React.FC = () => {
     {/* Header */}
     <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
       <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
-        LLM-Powered Financial Intelligence
+      Complex Financial Documents, Decoded by Firmi
       </span></h1>
-      <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx">Advanced analytics and AI-driven insights for strategic decision making</span></p>
+      <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx"> Firmi's models parses research reports with complex tables and charts to structured, semantic outputs accurately at scale</span></p>
     </div>
 
     {/* Carousel */}
@@ -1146,12 +1146,12 @@ const FinancialCarousel: React.FC = () => {
       </button> */}
 
       {/* Slide indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" data-unique-id="99914f04-f595-4dc5-870c-5e6c846a34a8" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+      {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" data-unique-id="99914f04-f595-4dc5-870c-5e6c846a34a8" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
         {currentData.map((_, index) => <button key={index} onClick={() => {
           setDirection(index > currentSlide ? 1 : -1);
           setCurrentSlide(index);
         }} className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-[#415d80]' : 'bg-gray-500'}`} aria-label={`Go to slide ${index + 1}`} data-is-mapped="true" data-unique-id="92f9b378-3d59-43ea-9578-915ace2d8c55" data-file-name="components/FinancialCarousel.tsx" />)}
-      </div>
+      </div> */}
     </div>
 
     {/* Footer */}
