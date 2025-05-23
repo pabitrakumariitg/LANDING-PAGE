@@ -120,13 +120,14 @@ const FinancialInsightsCard = () => {
   const getInsightColor = (type: string) => {
     switch (type) {
       case 'positive':
-        return 'border-green-200 bg-green-50';
+        return 'bg-[#e6f0f9] border-[#c2d8eb]';
       case 'negative':
-        return 'border-red-200 bg-red-50';
+        return 'bg-red-50 border-red-200';
       case 'warning':
-        return 'border-amber-200 bg-amber-50';
+        return 'bg-yellow-50 border-yellow-200';
+      case 'neutral':
       default:
-        return 'border-[#415d80] border-opacity-20 bg-[#415d80] bg-opacity-5';
+        return 'bg-gray-50 border-gray-200';
     }
   };
   return <div className="w-full max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden" data-unique-id="0ab521d5-8412-48d9-b641-352c83a557a0" data-file-name="components/FinancialInsightsCard.tsx">
@@ -148,7 +149,7 @@ const FinancialInsightsCard = () => {
               </div>
             </div>
             
-            <button onClick={generateInsights} disabled={isLoading} className={`px-3 py-1 rounded-md text-sm bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white flex items-center gap-1 transition-colors ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`} data-unique-id="d7673bb8-67f1-4c1e-95d6-3a60da21e2ea" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
+            <button onClick={generateInsights} disabled={isLoading} className="px-4 py-2 bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white rounded-md transition-colors flex items-center space-x-2" data-unique-id="3c8b1c9d-6e5d-4e9a-9e6c-5c6f4e9e2e2b" data-file-name="components/FinancialInsightsCard.tsx" data-dynamic-text="true">
               {isLoading ? 'Generating...' : 'Refresh'}
             </button>
           </div>
