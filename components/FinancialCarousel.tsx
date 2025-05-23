@@ -1052,10 +1052,10 @@ const FinancialCarousel: React.FC = () => {
                     repeatType: "reverse",
                     delay: 0.4
                   }} data-unique-id="88a224a0-03cc-422b-b1bf-f24017c4e6e5" data-file-name="components/FinancialCarousel.tsx" />
-                  <motion.div className="text-[#415d80] text-sm mt-2 flex items-center" data-unique-id="8229cba1-2ee1-4711-9364-595c880882a0" data-file-name="components/FinancialCarousel.tsx">
+                  {/* <motion.div className="text-[#415d80] text-sm mt-2 flex items-center" data-unique-id="8229cba1-2ee1-4711-9364-595c880882a0" data-file-name="components/FinancialCarousel.tsx">
                     <Sparkles className="w-4 h-4 mr-2" /><span className="editable-text" data-unique-id="0877ea72-bdc4-4ef6-a677-f1b87fe32f0b" data-file-name="components/FinancialCarousel.tsx">
                       Generating insights...
-                    </span></motion.div>
+                    </span></motion.div> */}
                 </div> : <motion.div className="text-[#415d80] text-center py-6 italic" animate={{
                   opacity: [0.7, 1, 0.7]
                 }} transition={{
