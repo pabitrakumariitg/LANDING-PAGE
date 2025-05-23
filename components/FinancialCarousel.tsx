@@ -220,7 +220,7 @@ const AdvancedChartVisual = () => {
           opacity: 1,
           y: 0
         }} transition={{
-          delay: 0.6
+          delay: 0.11
         }} data-unique-id="7b336737-5649-4372-ac1b-0211f3b325ba" data-file-name="components/FinancialCarousel.tsx">
           <div className="text-xs text-gray-500" data-unique-id="fe6fe2c4-488a-4d08-ad93-e53f2c14e702" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="0ce672ba-0762-44a6-b089-65ab1c88b9b7" data-file-name="components/FinancialCarousel.tsx">Net Profit</span></div>
           <div className="text-lg font-bold text-[#415d80]" data-unique-id="b80f7c9a-accc-4aa6-89c2-e85d2b50ce23" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="c14c018c-0dff-41a7-a0c7-e9b5296ad876" data-file-name="components/FinancialCarousel.tsx">$113M</span></div>
