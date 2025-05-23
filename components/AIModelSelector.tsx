@@ -40,9 +40,9 @@ const AIModelSelector: React.FC<AIModelSelectorProps> = ({
           </select> */}
         </div>
         
-        <button onClick={generateInsight} disabled={isGenerating} className={`px-3 py-1 rounded-md text-sm ${isGenerating ? 'bg-gray-300 text-gray-600' : 'bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white'} transition-colors`} data-unique-id="b525c270-6b9e-427b-9be4-0fa539e91d3e" data-file-name="components/AIModelSelector.tsx" data-dynamic-text="true">
+        {/* <button onClick={generateInsight} disabled={isGenerating} className={`px-3 py-1 rounded-md text-sm ${isGenerating ? 'bg-gray-300 text-gray-600' : 'bg-[#415d80] hover:bg-[#415d80] hover:bg-opacity-90 text-white'} transition-colors`} data-unique-id="b525c270-6b9e-427b-9be4-0fa539e91d3e" data-file-name="components/AIModelSelector.tsx" data-dynamic-text="true">
           {isGenerating ? 'Generating...' : 'Generate Insight'}
-        </button>
+        </button> */}
       </div>
       
       {error && <div className="text-red-400 text-xs" data-unique-id="74f5c3d2-0db2-45f5-9518-ed5211d255f4" data-file-name="components/AIModelSelector.tsx" data-dynamic-text="true">

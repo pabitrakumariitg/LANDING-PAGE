@@ -1098,7 +1098,7 @@ const FinancialCarousel: React.FC = () => {
                 }} data-unique-id="4a3d89ba-319e-4a4c-a51d-ffec3ad09b41" data-file-name="components/FinancialCarousel.tsx" />}
               </div>
 
-              <div className="mt-6 flex items-center" data-unique-id="72ec9c7d-5c0a-4732-b722-a5567b1ca0c7" data-file-name="components/FinancialCarousel.tsx">
+              {/* <div className="mt-6 flex items-center" data-unique-id="72ec9c7d-5c0a-4732-b722-a5567b1ca0c7" data-file-name="components/FinancialCarousel.tsx">
                 <div className="flex-grow h-[1px] bg-[#415d80] bg-opacity-20" data-unique-id="25f6c97c-f396-4320-b1f5-1ef156c03b2c" data-file-name="components/FinancialCarousel.tsx"></div>
                 <div className="mx-4 text-[#415d80] text-sm flex items-center" data-unique-id="268f5d1a-dcab-432d-9473-93ede1c9289a" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                   {currentData[currentSlide].insightGenerated ? <motion.div initial={{
@@ -1109,7 +1109,7 @@ const FinancialCarousel: React.FC = () => {
                     delay: 0.3,
                     duration: 0.5
                   }} data-unique-id="a512e159-6b6c-47ec-845e-e2427d12e780" data-file-name="components/FinancialCarousel.tsx">
-                    <span className="editable-text" data-unique-id="2a47ebde-98a8-4bd4-979f-85daf8ebf348" data-file-name="components/FinancialCarousel.tsx">Confidence: 94%</span>
+                    <span className="editable-text" data-unique-id="2a47ebde-98a8-4bd4-979f-85daf8ebf348" data-file-name="components/FinancialCarousel.tsx"></span>
                   </motion.div> : currentData[currentSlide].scanComplete ? <motion.div animate={{
                     opacity: [0.5, 1, 0.5]
                   }} transition={{
@@ -1127,7 +1127,7 @@ const FinancialCarousel: React.FC = () => {
                   </motion.div>}
                 </div>
                 <div className="flex-grow h-[1px] bg-[#415d80] bg-opacity-20" data-unique-id="b0086d3b-99db-4444-841f-9ad7230b08bb" data-file-name="components/FinancialCarousel.tsx"></div>
-              </div>
+              </div> */}
 
               <div className="mt-6" data-unique-id="bee55972-030e-423c-bb78-7d6fc052ff7b" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {currentData[currentSlide].insightGenerated && <motion.div initial={{
