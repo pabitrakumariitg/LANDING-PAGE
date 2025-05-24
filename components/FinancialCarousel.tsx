@@ -761,7 +761,7 @@ const FinancialCarousel: React.FC = () => {
 
   // Trigger scanning animation when slide changes
   useEffect(() => {
-    // Reset states for current slide
+    // Reset states for current slide but keep scanning active
     setIsScanning(true);
     setCurrentData(prev => {
       const newData = [...prev];
@@ -775,11 +775,9 @@ const FinancialCarousel: React.FC = () => {
       return newData;
     });
 
-    // Scanning animation timeout
-    const scanTimer = setTimeout(() => {
-      setIsScanning(false);
-
-      // Mark scan as complete
+    // Start generating insight after a delay but don't stop scanning
+    const insightTimer = setTimeout(() => {
+      // Mark scan as complete but keep scanning animation active
       setCurrentData(prev => {
         const newData = [...prev];
         newData[currentSlide] = {
@@ -790,14 +788,12 @@ const FinancialCarousel: React.FC = () => {
         return newData;
       });
 
-      // After scan completes, start generating insight
-      const insightTimer = setTimeout(() => {
-        // Simulate insight generation
+      // Generate insight without stopping the scanning animation
+      setTimeout(() => {
         generateInsightForCurrentSlide();
       }, 500);
-      return () => clearTimeout(insightTimer);
     }, 3000);
-    return () => clearTimeout(scanTimer);
+    return () => clearTimeout(insightTimer);
   }, [currentSlide]);
 
   // Function to generate insight for current slide
@@ -813,7 +809,7 @@ const FinancialCarousel: React.FC = () => {
       const model = getTextProviders()[0];
       const result = await generateText(prompt, model);
 
-      // Update with generated insight
+      // Update with generated insight but keep scanning active
       setCurrentData(prev => {
         const newData = [...prev];
         newData[currentSlide] = {
@@ -821,13 +817,14 @@ const FinancialCarousel: React.FC = () => {
           description: result.text,
           insightGenerated: true,
           insightGenerating: false
+          // Note: We don't change the scanning state here
         };
         return newData;
       });
     } catch (error) {
       console.error("Error generating insight:", error);
 
-      // If error, set a default insight
+      // If error, set a default insight but keep scanning active
       setCurrentData(prev => {
         const newData = [...prev];
         const defaultInsights = ["Analysis reveals a 23% increase in quarterly revenue, with strongest growth in the technology sector. Recommend increasing investment in cloud services division for maximum ROI in the next fiscal year.", "Balance sheet analysis indicates a healthy liquidity ratio of 2.3. Current assets exceed liabilities by 43%. Recommend maintaining current cash reserves while exploring strategic acquisitions in complementary markets.", "Market analysis shows enterprise clients now represent 62% of revenue, up from 48% last year. Recommend expanding enterprise sales team by 15% to capitalize on this trend and develop specialized enterprise solutions."];
@@ -836,6 +833,7 @@ const FinancialCarousel: React.FC = () => {
           description: defaultInsights[currentSlide],
           insightGenerated: true,
           insightGenerating: false
+          // Note: We don't change the scanning state here
         };
         return newData;
       });
@@ -906,7 +904,7 @@ const FinancialCarousel: React.FC = () => {
                 {renderChart(currentData[currentSlide].chartType)}
 
                 {/* Advanced scanner effect */}
-                <ScanningEffect isActive={isScanning} />
+                <ScanningEffect isActive={isScanning} chartType={currentData[currentSlide].chartType} />
 
                 {/* Data point highlight effects */}
                 {currentData[currentSlide].chartType === "chart" && <DataPointHighlight isActive={isScanning} points={[{
