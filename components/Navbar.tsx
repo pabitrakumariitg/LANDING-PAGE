@@ -58,19 +58,19 @@ const Navbar = () => {
         <div className="flex items-center space-x-6">
           <Link
             href="/product"
-            className="text-base font-medium text-gray-700 hover:text-primary transition-colors"
+            className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
           >
             Product
           </Link>
           <Link
             href="/solutions"
-            className="text-base font-medium text-gray-700 hover:text-primary transition-colors"
+            className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
           >
             Solutions
           </Link>
           <Link
             href="/research"
-            className="text-base font-medium text-gray-700 hover:text-primary transition-colors"
+            className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
           >
             Research
           </Link>
