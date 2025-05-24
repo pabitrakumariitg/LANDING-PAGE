@@ -119,11 +119,27 @@ const ComparisonSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
-            <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
+
+
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <motion.h1
+              className="heading-lg text-[#415d80] mb-4 text-3xl font-['Tiempos Headline'] font-[400]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               Accelerate time to value
-            </span></h1>
-            <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx">Delegate research tasks to Firmi like a domain-specific personal analyst that understands equity research</span></p>
+            </motion.h1>
+            <motion.p
+              className="body-text text-tertiary font-['system-ui']"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Delegate research tasks to Firmi like a domain-specific personal analyst that understands equity research
+            </motion.p>
           </div>
         </motion.div>
 

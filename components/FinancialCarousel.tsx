@@ -77,13 +77,13 @@ const AdvancedChartVisual = () => {
     <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4" data-unique-id="7ade4999-78b4-44aa-99e3-e37d9b67302d" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
       <div className="w-full flex justify-between mb-6" data-unique-id="0a373cd4-d575-4585-8a9a-251350618d85" data-file-name="components/FinancialCarousel.tsx">
         <div data-unique-id="5205e23b-6f31-449c-b832-6172d98946cc" data-file-name="components/FinancialCarousel.tsx">
-          <h3 className="text-[#415d80] text-lg font-medium" data-unique-id="151b1a4f-aaf4-4c65-9e47-f3fe299bd867" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e9a24144-9795-4df6-b0dd-187751ef4061" data-file-name="components/FinancialCarousel.tsx">Financial Performance</span></h3>
-          <p className="text-sm text-gray-500" data-unique-id="24b89764-d3b6-4a68-9497-31e1230021cf" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="21f37172-8930-4e5c-9256-0592b91e0f27" data-file-name="components/FinancialCarousel.tsx">YTD Overview (in millions)</span></p>
+          <h3 className="text-[#415d80] text-lg font-semibold tracking-wide" data-unique-id="151b1a4f-aaf4-4c65-9e47-f3fe299bd867" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="e9a24144-9795-4df6-b0dd-187751ef4061" data-file-name="components/FinancialCarousel.tsx">Financial Performance</span></h3>
+          <p className="text-sm text-[#A2A9B6] tracking-wide" data-unique-id="24b89764-d3b6-4a68-9497-31e1230021cf" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="21f37172-8930-4e5c-9256-0592b91e0f27" data-file-name="components/FinancialCarousel.tsx">YTD Overview (in millions)</span></p>
         </div>
         <div className="flex space-x-2" data-unique-id="0d6388c0-71f8-4346-86f2-86f40b046208" data-file-name="components/FinancialCarousel.tsx">
           <div className="flex items-center" data-unique-id="684708d1-56a1-49ba-ac12-3d3c18f9bb56" data-file-name="components/FinancialCarousel.tsx">
             <div className="w-3 h-3 bg-[#415d80] rounded-full mr-1" data-unique-id="4f92abf3-93cd-4502-aea0-feafc065546b" data-file-name="components/FinancialCarousel.tsx"></div>
-            <span className="text-xs text-gray-600" data-unique-id="f4b6f5b7-915a-4b78-9fd9-f2af756d7dd8" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="89186597-6c49-499b-9230-b5a258d92b37" data-file-name="components/FinancialCarousel.tsx">Revenue</span></span>
+            <span className="text-xs text-[#A2A9B6] font-semibold tracking-wide" data-unique-id="f4b6f5b7-915a-4b78-9fd9-f2af756d7dd8" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="89186597-6c49-499b-9230-b5a258d92b37" data-file-name="components/FinancialCarousel.tsx">Revenue</span></span>
           </div>
           <div className="flex items-center" data-unique-id="49563fdc-0099-4392-9619-6d30fd82aa08" data-file-name="components/FinancialCarousel.tsx">
             <div className="w-3 h-3 bg-red-400 rounded-full mr-1" data-unique-id="dc1dea06-382c-42f6-8eaa-beb072f0df9e" data-file-name="components/FinancialCarousel.tsx"></div>
@@ -896,12 +896,27 @@ Input-cost inflation in displays/LEDs.
   };
   return <div className="w-full h-screen bg-gray-50 flex flex-col items-center justify-center overflow-hidden" data-unique-id="e5ac3d63-d769-41eb-b297-a975e0a4c980" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
     {/* Header */}
-    <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
-      <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
+    <div className="text-center max-w-3xl mx-auto mb-12">
+      <motion.h1
+        className="heading-lg text-[#415d80] mb-4 text-3xl font-['Tiempos Headline'] font-[400]"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         Complex Financial Documents, Decoded by Firmi
-      </span></h1>
-      <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx"> Firmi's models parses research reports with complex tables and charts to structured, semantic outputs accurately at scale</span></p>
+      </motion.h1>
+      <motion.p
+        className="body-text text-tertiary font-['system-ui']"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+      >
+        Firmi's models parses research reports with complex tables and charts to structured, semantic outputs accurately at scale
+      </motion.p>
     </div>
+
 
     {/* Carousel */}
     <div className="relative w-full max-w-6xl h-[500px] mx-auto" data-unique-id="47ba1500-cf74-41cc-b649-63c8f96d0040" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
@@ -1175,7 +1190,7 @@ Input-cost inflation in displays/LEDs.
                     duration: 1.5,
                     repeat: Infinity
                   }} data-unique-id="c4955db0-f470-429f-99da-5c935b78bfc8" data-file-name="components/FinancialCarousel.tsx">
-                    <span className="editable-text" data-unique-id="21796b2c-e42b-4161-b2fa-9a9f771cfb41" data-file-name="components/FinancialCarousel.tsx">Scanning...</span>
+                    <span className="editable-text font-semibold tracking-wide text-[#B8D1F3]" data-unique-id="21796b2c-e42b-4161-b2fa-9a9f771cfb41" data-file-name="components/FinancialCarousel.tsx">Scanning...</span>
                   </motion.div>}
                 </div>
                 <div className="flex-grow h-[1px] bg-[#415d80] bg-opacity-20" data-unique-id="b0086d3b-99db-4444-841f-9ad7230b08bb" data-file-name="components/FinancialCarousel.tsx"></div>
