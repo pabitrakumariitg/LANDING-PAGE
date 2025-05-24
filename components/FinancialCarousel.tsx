@@ -827,7 +827,32 @@ const FinancialCarousel: React.FC = () => {
       // If error, set a default insight but keep scanning active
       setCurrentData(prev => {
         const newData = [...prev];
-        const defaultInsights = ["Analysis reveals a 23% increase in quarterly revenue, with strongest growth in the technology sector. Recommend increasing investment in cloud services division for maximum ROI in the next fiscal year.", "Balance sheet analysis indicates a healthy liquidity ratio of 2.3. Current assets exceed liabilities by 43%. Recommend maintaining current cash reserves while exploring strategic acquisitions in complementary markets.", "Market analysis shows enterprise clients now represent 62% of revenue, up from 48% last year. Recommend expanding enterprise sales team by 15% to capitalize on this trend and develop specialized enterprise solutions."];
+        const defaultInsights = [
+          `NCDs remain the dominant source (50–55% of total borrowings) throughout.
+      Bank borrowings have crept up from mid-20s to low-30s (%), peaking around 35% in 2Q FY24.
+      Tier-II lines are immaterial (~1–3%).
+      Deposits have shrunk from ~9% to low single digits (3–5%).
+      NHB borrowings and CP & other instruments each hover in the mid-single-digit range.`,
+
+          `Headline: Acute margin pressure; expect gradual recovery in 2HFY26.
+      Kotak highlights margin compression across segments, especially cigarettes, FMCG, and paperboards, driven by weak volume and high input cost inflation. However, it maintains a positive long-term view with expected EPS growth in FY26 and FY27 and revised FV of ₹480 from ₹500.
+      
+      Short-term Caution: Persistent margin headwinds and weak consumer sentiment could depress earnings in H1FY26.
+      Long-term Positive: Strong brand equity in cigarettes, expanding FMCG portfolio, and high dividend payout lend defensive characteristics.
+      Key Catalyst: Recovery in margins (H2FY26) and FMCG profitability turnaround.`,
+
+          `
+     Strong long-term growth: Total production is forecast to rise from USD 115 bn in FY24 to USD 450 bn by FY30 (≈25.5% CAGR), with consumption growing to USD 400 bn (15.4% CAGR).
+Rising localization: Local value-add is set to rise from 30% today to 47% by FY30, underscoring import-substitution opportunities and government “Make in India” leverage. 
+
+     Exports set to boom: Exports share climbs from 30% of production today to 47% by FY30.
+High-value segments (PCBA, semis, industrial electronics) are export-led—favors large global-certified suppliers.
+Global cycle cyclicality in consumer electronics and mobiles.
+Input-cost inflation in displays/LEDs.
+
+      
+   `
+        ];
         newData[currentSlide] = {
           ...newData[currentSlide],
           description: defaultInsights[currentSlide],
@@ -896,7 +921,7 @@ const FinancialCarousel: React.FC = () => {
             <div className="h-full flex flex-col" data-unique-id="1101ac9d-2189-4760-8e49-45b33b2b78cd" data-file-name="components/FinancialCarousel.tsx">
               <div className="flex items-center mb-4" data-unique-id="5ccb257e-6d5f-4642-aba2-fb8a90990af2" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {renderIcon(financialData[currentSlide].chartType)}
-                <h4 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+                <h4 className="text-xl font-bold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                   {currentSlide === 0 ? "Chart Analysis" : currentData[currentSlide].title}
                 </h4>
               </div>
