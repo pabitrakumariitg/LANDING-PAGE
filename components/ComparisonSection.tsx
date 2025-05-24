@@ -104,7 +104,7 @@ const ComparisonSection = () => {
         (prevIndex) => (prevIndex + 1) % comparisonCards.length
       );
     }, 8000
-  );
+    );
 
     return () => clearInterval(timer);
   }, []);
@@ -119,9 +119,12 @@ const ComparisonSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-['Tiempos Headline'] font-[400] text-[#415d80] mb-4">
-            Firmi enables technical teams to handle complex documents.
-          </h2>
+          <div className="w-full text-center mb-8" data-unique-id="f605e4f7-5e94-49b1-abeb-acc5d1948765" data-file-name="components/FinancialCarousel.tsx">
+            <h1 className="text-4xl font-bold text-[#415d80] tracking-tight" data-unique-id="1667a66f-6431-4ccd-9108-c1096182c524" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="15f6e61a-dcb4-4452-9f28-cf335de1721e" data-file-name="components/FinancialCarousel.tsx">
+              Accelerate time to value
+            </span></h1>
+            <p className="text-[#415d80] mt-2" data-unique-id="5883623b-0e01-4a28-a7b5-34b092465207" data-file-name="components/FinancialCarousel.tsx"><span className="editable-text" data-unique-id="433efdbe-b0ec-4eb7-985f-97377ca4f479" data-file-name="components/FinancialCarousel.tsx">Delegate research tasks to Firmi like a domain-specific personal analyst that understands equity research</span></p>
+          </div>
         </motion.div>
 
         <div className="relative" ref={cardsContainerRef}>
@@ -234,11 +237,10 @@ const ComparisonSection = () => {
             {comparisonCards.map((_, index) => (
               <div
                 key={index}
-                className={`w-2.5 h-2.5 rounded-full cursor-pointer transition-all duration-300 ${
-                  index === currentCardIndex
-                    ? "bg-gradient-to-r from-[#2b4559] to-[#497293] scale-125"
-                    : "bg-gray-300 hover:bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 rounded-full cursor-pointer transition-all duration-300 ${index === currentCardIndex
+                  ? "bg-gradient-to-r from-[#2b4559] to-[#497293] scale-125"
+                  : "bg-gray-300 hover:bg-gray-400"
+                  }`}
                 onClick={() => setCurrentCardIndex(index)}
               />
             ))}
