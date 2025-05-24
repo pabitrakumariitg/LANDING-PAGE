@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className="pt-50 pb-16 bg-gray-50 overflow-hidden">
+    <section className="pt-50 pb-16 bg-[#E5E5E5] overflow-hidden">
       <div className="w-[90%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Content - Left Side */}
@@ -17,16 +17,14 @@ const HeroSection = () => {
             className="space-y-6"
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-[#415d80] leading-tight">
-            The Intelligent Layer 
-            <br /> for your 
-            <br /> Investment Strategy
+              Start chasing Alpha,
+              <br /> AI for Investment Research
             </h1>
             <p className="text-lg md:text-xl text-firmi/70 max-w-lg">
-            The world’s financial data is complex and chaotic. Firmi distills it into actionable insight designed to power your investment decisions.
-            </p>
+              Supercharge your investment research. Turn your data chaos into competitive edge   </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/secure/chat" 
+              <Link
+                href="/secure/chat"
                 className="btn-primary inline-flex items-center justify-center w-full sm:w-auto"
               >
                 Explore Firmi
