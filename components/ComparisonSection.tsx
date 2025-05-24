@@ -103,7 +103,8 @@ const ComparisonSection = () => {
       setCurrentCardIndex(
         (prevIndex) => (prevIndex + 1) % comparisonCards.length
       );
-    }, 8000);
+    }, 8000
+  );
 
     return () => clearInterval(timer);
   }, []);

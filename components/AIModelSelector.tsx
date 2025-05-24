@@ -15,6 +15,7 @@ const AIModelSelector: React.FC<AIModelSelectorProps> = ({
   const [error, setError] = useState<string | null>(null);
   const availableModels = getTextProviders();
   const generateInsight = async () => {
+    
     setIsGenerating(true);
     setError(null);
     try {

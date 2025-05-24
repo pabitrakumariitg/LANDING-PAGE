@@ -17,14 +17,14 @@ const financialData = [{
   insightGenerated: false,
   insightGenerating: false
 }, {
-  title: "Q3 Financial Statement",
+  title: "Research Report Analysis",
   description: "",
   chartType: "document",
   scanComplete: false,
   insightGenerated: false,
   insightGenerating: false
 }, {
-  title: "Revenue by Business Unit",
+  title: "Table Analysis",
   description: "",
   chartType: "table",
   scanComplete: false,
@@ -658,13 +658,45 @@ const EfficiencyVisual = () => <div className="relative h-full w-full flex items
 const renderChart = (type: string) => {
   switch (type) {
     case 'chart':
-      return <AdvancedChartVisual />;
+      return (
+        <div className="flex flex-col items-center justify-center w-full h-full">
+          <img
+            src="/images/ChartAnalysis.jpg"
+            alt="India electronic industry segment-wise forecasts"
+            className="w-full  object-contain rounded border shadow"
+          />
+        </div>
+      );
     case 'document':
-      return <DocumentVisual />;
+      return (
+        <div className="flex flex-col items-center justify-center w-full h-full">
+          <img
+            src="/images/Research Report.jpg"
+            alt="Borrowing mix fiscal year-ends"
+            className="w-full  object-contain rounded border shadow"
+          />
+        </div>
+      );
     case 'table':
-      return <DataTableVisual />;
+      return (
+        <div className="flex flex-col items-center justify-center w-full h-full">
+          <img
+            src="/images/TableAnalysis.jpg"
+            alt="ITC Consumer Staples Report"
+            className="w-full  object-contain rounded border shadow"
+          />
+        </div>
+      );
     default:
-      return <AdvancedChartVisual />;
+      return (
+        <div className="flex flex-col items-center justify-center w-full h-full">
+          <img
+            src="/images/TableAnalysis.jpg"
+            alt="India electronic industry segment-wise forecasts"
+            className="w-full  object-contain rounded border shadow"
+          />
+        </div>
+      );
   }
 };
 
@@ -867,22 +899,11 @@ const FinancialCarousel: React.FC = () => {
               <div className="flex items-center mb-4" data-unique-id="5ccb257e-6d5f-4642-aba2-fb8a90990af2" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {renderIcon(financialData[currentSlide].chartType)}
                 <h4 className="text-xl font-semibold text-[#415d80] ml-2" data-unique-id="2c5d4157-dc89-40bc-9d31-c8ea7d26890f" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
-                  {currentSlide === 0 ? "Daily crude production volumes from ONGC's fields" : currentData[currentSlide].title}
+                  {currentSlide === 0 ? "Chart Analysis" : currentData[currentSlide].title}
                 </h4>
               </div>
               <div className="flex-grow relative" data-unique-id="828d0a81-119a-4582-841a-1fc9b142ab53" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
-                {currentSlide === 0 ? (
-                  <div className="flex flex-col items-center justify-center w-full h-full">
-                    <img
-                      src="/images/daily-crude.png"
-                      alt="Daily crude production volumes from ONGC's fields"
-                      className="w-full max-h-72 object-contain rounded border shadow"
-                    />
-
-                  </div>
-                ) : (
-                  renderChart(currentData[currentSlide].chartType)
-                )}
+                {renderChart(currentData[currentSlide].chartType)}
 
                 {/* Advanced scanner effect */}
                 <ScanningEffect isActive={isScanning} />
