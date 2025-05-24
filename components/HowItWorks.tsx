@@ -27,8 +27,8 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Firmi sources hundreds of millions of public and private data files
-            and ingests them into our proprietary enterprise.
+            One Platform, All Your Data
+            Break down silos. Firmi connects to your internal data sources and provides access to company financials, research reports, government policies, economic indicators and more creating unified knowledge base for your firm.
           </motion.p>
         </div>
 
