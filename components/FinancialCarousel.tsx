@@ -1042,7 +1042,15 @@ Input-cost inflation in displays/LEDs.
 
           {/* Right section - AI Insights */}
           <div className="w-1/2 bg-white p-6 rounded-r-xl shadow-md" data-unique-id="47d66e79-6a21-4e66-a4dc-d3a964bd63e9" data-file-name="components/FinancialCarousel.tsx">
-            <div className="h-full flex flex-col justify-center p-6 rounded-lg border border-[#e6f0f9]" style={holographicEffect} data-unique-id="0a2873cd-ab19-4040-bfc6-1808b49daa8d" data-file-name="components/FinancialCarousel.tsx">
+            <div
+              className="h-full flex flex-col justify-center p-6 rounded-lg border border-[#e6f0f9]"
+              style={{
+                ...holographicEffect,
+                background: 'linear-gradient(135deg, #2b4559 0%, #497293 100%)'
+              }}
+              data-unique-id="0a2873cd-ab19-4040-bfc6-1808b49daa8d"
+              data-file-name="components/FinancialCarousel.tsx"
+            >
               {currentSlide === 0 && (
                 <div className="mb-6">
                   {/* <h3 className="text-lg font-bold text-[#415d80] mb-2">Firmi's Insights</h3>
@@ -1065,7 +1073,7 @@ Input-cost inflation in displays/LEDs.
                     duration: 0.5,
                     times: [0, 0.5, 1]
                   }
-                }} className="text-[#415d80] mr-2" data-unique-id="f630d57a-a963-4d45-ac1c-435287f8a199" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+                }} className="text-white mr-2" data-unique-id="f630d57a-a963-4d45-ac1c-435287f8a199" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                   {currentData[currentSlide].insightGenerated ? <motion.div initial={{
                     scale: 0
                   }} animate={{
@@ -1077,14 +1085,14 @@ Input-cost inflation in displays/LEDs.
                     <Sparkles className="w-5 h-5" />
                   </motion.div> : isScanning ? <Scan className="w-5 h-5" /> : <Sparkles className="w-5 h-5" />}
                 </motion.div>
-                <h3 className="text-lg font-medium text-[#415d80]" data-unique-id="11306408-f1de-476a-8d7c-666c628f97cf" data-file-name="components/FinancialCarousel.tsx">
-                  <span className="editable-text" data-unique-id="dc667316-da43-44ea-bd34-b59ba273b8f6" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+                <h3 className="text-lg font-medium text-white" data-unique-id="11306408-f1de-476a-8d7c-666c628f97cf" data-file-name="components/FinancialCarousel.tsx">
+                  <span className="editable-text text-white" data-unique-id="dc667316-da43-44ea-bd34-b59ba273b8f6" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                     {currentData[currentSlide].insightGenerated ? "Firmi Insights" : currentData[currentSlide].scanComplete ? "Generating Insights..." : "Scanning Data..."}
                   </span>
                 </h3>
               </div>
 
-              <div className="text-gray-700 leading-relaxed relative min-h-[120px]" data-unique-id="1e196ca6-6063-46b0-bacf-5db64515cbf7" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
+              <div className="text-white leading-relaxed relative min-h-[120px]" data-unique-id="1e196ca6-6063-46b0-bacf-5db64515cbf7" data-file-name="components/FinancialCarousel.tsx" data-dynamic-text="true">
                 {currentData[currentSlide].scanComplete ? currentData[currentSlide].insightGenerated ? <motion.div initial={{
                   opacity: 0
                 }} animate={{
@@ -1121,7 +1129,7 @@ Input-cost inflation in displays/LEDs.
                     <Sparkles className="w-4 h-4 mr-2" /><span className="editable-text" data-unique-id="0877ea72-bdc4-4ef6-a677-f1b87fe32f0b" data-file-name="components/FinancialCarousel.tsx">
                       Generating insights...
                     </span></motion.div> */}
-                </div> : <motion.div className="text-[#415d80] text-center py-6 italic" animate={{
+                </div> : <motion.div className="text-white text-center py-6 italic" animate={{
                   opacity: [0.7, 1, 0.7]
                 }} transition={{
                   duration: 2,
