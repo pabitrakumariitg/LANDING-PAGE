@@ -73,7 +73,7 @@ const QuerySection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="section-container">
-        <motion.div
+        {/* <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const QuerySection = () => {
             Not just faster answers. Better ones. One question. Every dataset.
             Instant clarity.
           </p>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="max-w-4xl mx-auto"
