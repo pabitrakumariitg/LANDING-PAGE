@@ -70,7 +70,7 @@ const HeroSection = () => {
     setDeepThinkEnabled(!deepThinkEnabled);
   };
   return (
-    <section className="pt-55 pb-16 bg-[#f9f7f5] overflow-hidden">
+    <section className="pt-45 pb-16 bg-[#f9f7f5] overflow-hidden">
       <div className="w-[90%] max-w-4xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <motion.div
