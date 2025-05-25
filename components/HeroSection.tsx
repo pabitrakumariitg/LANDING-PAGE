@@ -79,7 +79,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6 w-full"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-[#415d80] leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#415d80] leading-tight">
               Start chasing Alpha,
               <br /> AI for Investment Research
             </h1>
