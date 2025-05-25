@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <QuerySection />
+      {/* <QuerySection /> */}
       <HowItWorks />
       <ComparisonSection />
       <FinancialCarousel/>

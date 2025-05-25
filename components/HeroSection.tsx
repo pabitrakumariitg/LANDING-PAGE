@@ -70,7 +70,7 @@ const HeroSection = () => {
     setDeepThinkEnabled(!deepThinkEnabled);
   };
   return (
-    <section className="pt-50 pb-16 bg-[#E5E5E5] overflow-hidden">
+    <section className="pt-35 pb-16 bg-[#f9f7f5] overflow-hidden">
       <div className="w-[90%] max-w-4xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -123,7 +123,7 @@ const HeroSection = () => {
           >
             {/* Query Box */}
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-              <div className="flex items-center space-x-3 bg-gray-50 rounded-xl px-4 py-3">
+              <div className="flex items-center space-x-3 bg-gray-50 rounded-xl px-4 ">
                 {/* Search Icon */}
                 <svg
                   className="w-5 h-5 text-gray-500"
