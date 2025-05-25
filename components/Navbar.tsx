@@ -49,7 +49,7 @@ const Navbar = () => {
       >
         {/* Left side - Logo */}
         <Link href="/" className="flex items-center">
-          <span className="font-['seasonSans'] text-[#415d80] text-3xl font-bold">
+          <span className="font-['Martina Plantijn Regular'] text-[#415d80] text-2xl font-bold">
             Firmi
           </span>
         </Link>

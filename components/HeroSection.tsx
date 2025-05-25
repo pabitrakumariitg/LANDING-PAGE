@@ -70,7 +70,7 @@ const HeroSection = () => {
     setDeepThinkEnabled(!deepThinkEnabled);
   };
   return (
-    <section className="pt-35 pb-16 bg-[#f9f7f5] overflow-hidden">
+    <section className="pt-55 pb-16 bg-[#f9f7f5] overflow-hidden">
       <div className="w-[90%] max-w-4xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -79,7 +79,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6 w-full"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#415d80] leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-[#415d80] leading-tight">
               Start chasing Alpha,
               <br /> AI for Investment Research
             </h1>

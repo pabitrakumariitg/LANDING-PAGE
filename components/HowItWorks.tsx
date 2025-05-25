@@ -18,18 +18,18 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            All the data you need in one place
+            One Platform, All Your Data
           </motion.h1>
           <motion.p
-            className="body-text text-tertiary font-['system-ui']"
+            className="body-text text-tertiary font-['system-ui'] text-xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            One Platform, All Your Data
-            Break down silos. Firmi connects to your internal data sources and provides access to company financials, research reports, government policies, economic indicators and more creating unified knowledge base for your firm.
+            Firmi connects to your internal data sources and provides access to company financials, research reports, government policies, economic indicators and more creating unified knowledge base for your firm.
           </motion.p>
+
         </div>
 
         <motion.div
