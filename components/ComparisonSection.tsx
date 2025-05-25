@@ -4,7 +4,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import Button from "./Button";
 
-const ComparisonSection = () => {
+interface ComparisonSectionProps {
+  id?: string;
+}
+
+const ComparisonSection: React.FC<ComparisonSectionProps> = ({ id }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const cardsContainerRef = useRef(null);
   const isInView = useInView(cardsContainerRef, { once: false, amount: 0.3 });
@@ -110,7 +114,7 @@ const ComparisonSection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white">
+    <section id={id} className="py-20 bg-white">
       <div className="w-[90%] max-w-[1400px] mx-auto px-[5%]">
         <motion.div
           className="text-center max-w-4xl mx-auto mb-12"

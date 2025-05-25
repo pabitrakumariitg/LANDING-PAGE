@@ -56,24 +56,33 @@ const Navbar = () => {
 
         {/* Middle - Navigation Links */}
         <div className="flex items-center space-x-6">
-          <Link
+          {/* <Link
             href="/product"
             className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
           >
             Product
-          </Link>
-          <Link
-            href="/solutions"
-            className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
+          </Link> */}
+          <a
+            href="#solutions"
+            className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('solutions');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Solutions
-          </Link>
-          <Link
-            href="/research"
+          </a>
+          <a
+            href="https://firmi.substack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors"
           >
             Research
-          </Link>
+          </a>
         </div>
 
         {/* Right side - Get Started Button */}

@@ -15,7 +15,7 @@ export default function Home() {
       <HeroSection />
       {/* <QuerySection /> */}
       <HowItWorks />
-      <ComparisonSection />
+      <ComparisonSection id="solutions" />
       <FinancialCarousel/>
       {/* <DelegateSection />
       <SearchSection />
