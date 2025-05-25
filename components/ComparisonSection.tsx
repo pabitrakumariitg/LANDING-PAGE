@@ -136,7 +136,7 @@ const ComparisonSection: React.FC<ComparisonSectionProps> = ({ id }) => {
               Accelerate time to value
             </motion.h1>
             <motion.p
-              className="body-text text-tertiary font-['system-ui']"
+              className="body-text text-tertiary font-['system-ui'] text-xl"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

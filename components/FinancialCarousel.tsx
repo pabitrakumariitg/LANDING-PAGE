@@ -907,7 +907,7 @@ Input-cost inflation in displays/LEDs.
         Complex Financial Documents, Decoded by Firmi
       </motion.h1>
       <motion.p
-        className="body-text text-tertiary font-['system-ui']"
+        className="body-text text-tertiary font-['system-ui'] text-xl"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
